@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+
+    div {
+        color: white;
+        width: 100px;
+        height: 100px;
+        border: 10px solid transparent;
+        border-radius: 100%;
+        border-top-color: #e0dcd1;
+        animation: spin 1s linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes spin {
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    span {
+        margin: 25% auto;
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <span>
+        <div>
+        </div>
+    </span>
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../images/icon.png">
+
+    <title>Jobify</title>
+</head>
+<style>
+    #loading {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #000 url("../images/loader.gif") no-repeat center;
+        z-index: 99999;
+    }
+</style>
+
+<body onload="loadfunc()">
+    <!-- loading page -->
+    <div id="loading"></div>
+    <div id="first" class="white">
+        <!-- logo -->
+        <div id="logo">
+            <svg width="954.822" height="200.253" viewBox="0 0 954.822 200.253" xmlns="http://www.w3.org/2000/svg"
+                id="heading">
+                <g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#000"
+                    stroke-width="0.25mm" fill="none" style="stroke:#000;stroke-width:0.25mm;fill:none">
+                    <path
+                        d="M 94.251 140.251 L 94.251 15.501 A 14.869 14.869 0 0 1 94.872 11.104 A 11.895 11.895 0 0 1 97.876 6.126 A 12.235 12.235 0 0 1 106.321 2.516 A 16.173 16.173 0 0 1 107.001 2.501 A 14.95 14.95 0 0 1 111.649 3.195 A 12.436 12.436 0 0 1 116.501 6.126 A 12.138 12.138 0 0 1 120.192 14.097 A 16.488 16.488 0 0 1 120.251 15.501 L 120.251 140.251 A 67.437 67.437 0 0 1 117.933 158.233 A 57.21 57.21 0 0 1 112.501 171.376 Q 104.751 185.001 91.251 192.626 A 58.822 58.822 0 0 1 69.681 199.644 A 75.044 75.044 0 0 1 60.001 200.251 A 68.479 68.479 0 0 1 42.019 197.971 A 57.736 57.736 0 0 1 28.876 192.626 Q 15.251 185.001 7.626 171.376 Q 0.001 157.751 0.001 140.251 A 14.363 14.363 0 0 1 0.668 135.778 A 11.829 11.829 0 0 1 3.751 130.876 A 12.759 12.759 0 0 1 12.808 127.252 A 16.552 16.552 0 0 1 13.001 127.251 A 14.869 14.869 0 0 1 17.398 127.873 A 11.895 11.895 0 0 1 22.376 130.876 A 12.227 12.227 0 0 1 25.903 138.422 A 16.712 16.712 0 0 1 26.001 140.251 A 45.031 45.031 0 0 0 27.094 150.376 A 36.177 36.177 0 0 0 30.376 159.251 Q 34.751 167.501 42.376 172.126 A 31.956 31.956 0 0 0 55.721 176.528 A 40.132 40.132 0 0 0 60.001 176.751 Q 70.001 176.751 77.751 172.126 Q 85.501 167.501 89.876 159.251 A 37.329 37.329 0 0 0 93.823 146.726 A 47.628 47.628 0 0 0 94.251 140.251 Z"
+                        id="0" vector-effect="non-scaling-stroke" />
+                    <path
+                        d="M 235.081 197.513 A 114.108 114.108 0 0 0 260.501 200.251 A 122.226 122.226 0 0 0 272.569 199.668 A 100.31 100.31 0 0 0 300.626 192.876 Q 318.751 185.501 332.001 172.126 Q 345.251 158.751 352.501 140.376 A 99.627 99.627 0 0 0 356.928 126.047 A 116.299 116.299 0 0 0 359.751 100.001 A 125.08 125.08 0 0 0 359.239 88.578 A 103.18 103.18 0 0 0 352.501 59.751 Q 345.251 41.501 332.001 28.126 Q 318.751 14.751 300.626 7.376 A 95.909 95.909 0 0 0 285.26 2.601 A 113.862 113.862 0 0 0 260.501 0.001 A 123.314 123.314 0 0 0 249.571 0.477 A 101.911 101.911 0 0 0 220.251 7.376 Q 202.001 14.751 188.876 28.126 Q 175.751 41.501 168.501 59.751 A 98.532 98.532 0 0 0 163.807 75.198 A 116.364 116.364 0 0 0 161.251 100.001 Q 161.251 122.001 168.501 140.376 Q 175.751 158.751 188.876 172.126 Q 202.001 185.501 220.251 192.876 A 97.124 97.124 0 0 0 235.081 197.513 Z M 260.501 176.751 A 78.448 78.448 0 0 0 280.698 174.221 A 69.299 69.299 0 0 0 290.376 170.876 Q 304.001 165.001 314.001 154.626 Q 324.001 144.251 329.376 130.251 Q 334.751 116.251 334.751 100.001 A 86.627 86.627 0 0 0 331.974 77.804 A 78.007 78.007 0 0 0 329.376 69.751 Q 324.001 55.751 314.001 45.376 Q 304.001 35.001 290.376 29.251 A 73.855 73.855 0 0 0 266.748 23.721 A 87.754 87.754 0 0 0 260.501 23.501 A 80.115 80.115 0 0 0 240.417 25.948 A 70.345 70.345 0 0 0 230.626 29.251 Q 217.001 35.001 207.126 45.376 Q 197.251 55.751 191.751 69.751 Q 186.251 83.751 186.251 100.001 A 84.59 84.59 0 0 0 189.217 122.655 A 76.689 76.689 0 0 0 191.751 130.251 Q 197.251 144.251 207.126 154.626 Q 217.001 165.001 230.626 170.876 A 72.628 72.628 0 0 0 254.499 176.545 A 86.046 86.046 0 0 0 260.501 176.751 Z"
+                        id="1" vector-effect="non-scaling-stroke" />
+                    <path
+                        d="M 478.501 197.751 L 413.501 197.751 A 13.297 13.297 0 0 1 408.294 196.754 A 12.601 12.601 0 0 1 404.251 194.001 A 12.542 12.542 0 0 1 400.502 184.923 A 16.013 16.013 0 0 1 400.501 184.751 L 400.501 15.501 A 14.363 14.363 0 0 1 401.168 11.028 A 11.829 11.829 0 0 1 404.251 6.126 A 12.759 12.759 0 0 1 413.308 2.502 A 16.552 16.552 0 0 1 413.501 2.501 L 473.251 2.501 Q 490.251 2.501 503.126 9.126 Q 516.001 15.751 523.376 27.501 A 48.419 48.419 0 0 1 530.566 49.764 A 59.85 59.85 0 0 1 530.751 54.501 Q 530.751 66.751 524.126 76.626 Q 517.501 86.501 506.001 92.251 A 53.442 53.442 0 0 1 521.288 98.437 A 46.06 46.06 0 0 1 532.501 108.001 A 40.741 40.741 0 0 1 541.181 125.903 A 59.245 59.245 0 0 1 542.501 138.751 A 62.194 62.194 0 0 1 540.079 156.393 A 53.254 53.254 0 0 1 534.376 169.251 A 56.97 56.97 0 0 1 512.202 189.887 A 67.269 67.269 0 0 1 511.751 190.126 Q 497.251 197.751 478.501 197.751 Z M 426.501 106.751 L 426.501 173.751 L 478.501 173.751 A 56.321 56.321 0 0 0 488.678 172.872 A 42.657 42.657 0 0 0 498.751 169.751 Q 507.501 165.751 512.501 158.001 A 30.263 30.263 0 0 0 516.609 147.797 Q 517.501 143.609 517.501 138.751 A 38.005 38.005 0 0 0 516.738 130.925 Q 515.641 125.709 512.965 121.676 A 23.727 23.727 0 0 0 512.501 121.001 A 30.174 30.174 0 0 0 501.521 111.657 A 37.322 37.322 0 0 0 498.751 110.376 A 46.317 46.317 0 0 0 488.037 107.445 A 62.65 62.65 0 0 0 478.501 106.751 L 426.501 106.751 Z M 426.501 26.501 L 426.501 82.751 L 473.251 82.751 Q 487.501 82.751 496.626 75.751 Q 505.751 68.751 505.751 54.501 A 35.246 35.246 0 0 0 504.86 46.315 A 22.024 22.024 0 0 0 496.626 33.376 A 32.986 32.986 0 0 0 483.983 27.636 Q 479.04 26.501 473.251 26.501 L 426.501 26.501 Z"
+                        id="2" vector-effect="non-scaling-stroke" />
+                    <path
+                        d="M 581.251 184.751 L 581.251 15.501 A 14.363 14.363 0 0 1 581.918 11.028 A 11.829 11.829 0 0 1 585.001 6.126 A 12.759 12.759 0 0 1 594.058 2.502 A 16.552 16.552 0 0 1 594.251 2.501 A 14.869 14.869 0 0 1 598.648 3.123 A 11.895 11.895 0 0 1 603.626 6.126 A 12.227 12.227 0 0 1 607.153 13.672 A 16.712 16.712 0 0 1 607.251 15.501 L 607.251 184.751 A 13.758 13.758 0 0 1 606.344 189.814 A 12.607 12.607 0 0 1 603.626 194.001 A 12.138 12.138 0 0 1 595.655 197.693 A 16.488 16.488 0 0 1 594.251 197.751 A 13.297 13.297 0 0 1 589.044 196.754 A 12.601 12.601 0 0 1 585.001 194.001 A 12.542 12.542 0 0 1 581.252 184.923 A 16.013 16.013 0 0 1 581.251 184.751 Z"
+                        id="3" vector-effect="non-scaling-stroke" />
+                    <path
+                        d="M 641.501 184.751 L 641.501 15.501 A 14.363 14.363 0 0 1 642.168 11.028 A 11.829 11.829 0 0 1 645.251 6.126 A 12.759 12.759 0 0 1 654.308 2.502 A 16.552 16.552 0 0 1 654.501 2.501 L 767.501 2.501 A 15.906 15.906 0 0 1 771.573 2.996 A 11.587 11.587 0 0 1 776.751 5.876 Q 780.251 9.251 780.251 14.751 A 12.795 12.795 0 0 1 779.651 18.756 A 10.526 10.526 0 0 1 776.751 23.251 A 11.887 11.887 0 0 1 770.875 26.184 A 17.091 17.091 0 0 1 767.501 26.501 L 667.501 26.501 L 667.501 87.251 L 739.251 87.251 A 15.906 15.906 0 0 1 743.323 87.746 A 11.587 11.587 0 0 1 748.501 90.626 A 11.293 11.293 0 0 1 751.979 98.443 A 15.118 15.118 0 0 1 752.001 99.251 A 12.885 12.885 0 0 1 751.331 103.486 A 11.049 11.049 0 0 1 748.501 107.876 Q 745.001 111.251 739.251 111.251 L 667.501 111.251 L 667.501 184.751 A 13.297 13.297 0 0 1 666.504 189.958 A 12.601 12.601 0 0 1 663.751 194.001 A 12.542 12.542 0 0 1 654.672 197.75 A 16.013 16.013 0 0 1 654.501 197.751 A 13.297 13.297 0 0 1 649.294 196.754 A 12.601 12.601 0 0 1 645.251 194.001 A 12.542 12.542 0 0 1 641.502 184.923 A 16.013 16.013 0 0 1 641.501 184.751 Z"
+                        id="4" vector-effect="non-scaling-stroke" />
+                    <path
+                        d="M 859.251 184.751 L 859.251 126.501 L 792.501 22.751 A 20.503 20.503 0 0 1 790.892 19.61 Q 789.479 16.092 790.001 12.876 Q 790.751 8.251 794.376 5.376 Q 798.001 2.501 802.751 2.501 Q 805.955 2.501 808.164 3.567 A 8.046 8.046 0 0 1 809.501 4.376 Q 812.001 6.251 814.251 9.751 L 877.751 110.501 L 867.751 110.501 L 932.251 8.751 A 16.101 16.101 0 0 1 934.729 5.82 A 13.447 13.447 0 0 1 937.001 4.126 Q 939.751 2.501 943.751 2.501 A 10.622 10.622 0 0 1 947.875 3.283 A 9.971 9.971 0 0 1 951.251 5.626 Q 954.251 8.751 954.751 13.376 Q 955.251 18.001 952.251 22.751 L 885.001 126.501 L 885.001 184.751 A 13.297 13.297 0 0 1 884.004 189.958 A 12.601 12.601 0 0 1 881.251 194.001 A 12.542 12.542 0 0 1 872.172 197.75 A 16.013 16.013 0 0 1 872.001 197.751 A 12.256 12.256 0 0 1 863.118 194.118 A 15.053 15.053 0 0 1 863.001 194.001 A 12.542 12.542 0 0 1 859.252 184.923 A 16.013 16.013 0 0 1 859.251 184.751 Z"
+                        id="5" vector-effect="non-scaling-stroke" class="letter_y" />
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <!-- 2nd page -->
+    <div id="second" class="black">
+        <h2 class="not-scrolled">Helping you build a</h2>
+        <br>
+        <br>
+        <div id="tobeHidden">
+            <img src="../images/letterC.png" alt="" class="foto" id="furst">
+            <img src="../images/letterA.png" alt="" class="foto" id="secnd">
+            <img src="../images/letterR1.png" alt="" class="foto" id="thrd">
+            <img src="../images/letterE2.png" alt="" class="foto" id="fourth">
+            <img src="../images/letterE1.png" alt="" class="foto" id="fifth">
+            <img src="../images/letterR2.png" alt="" class="foto" id="sixth">
+        </div>
+    </div>
+
+    <!-- 3rd page -->
+    <div id="third" class="white2">
+        <h2 class="not-scrolled">Looking for a job?</h2>
+        <div id="photoDiv">
+            <img src="../images/bg2.jpeg" alt="" id="bg_3" class="not-scrolled">
+        </div>
+        <div class="content">Don't worry, we got you covered. Enter the details of the job you'd like, and we show you
+            all the openings of your choice. You can filter your search, with Skills, Minimum salary, Job types.etc
+        </div>
+
+        <!-- input section -->
+        <div id="toCenter">
+            <div id="tempBody">
+                <form action="" method="get" id="submitform">
+                    <label for="jobTitle">Enter job title: </label>
+                    <input type="text" name="jobTitle" id="search" required>
+                    <br>
+                    <br>
+                    <label for="country">Select country: </label>
+                    <select name="country" id="country" required>
+                        <option></option>
+                        <option value="Australia">Australia</option>
+                        <option value="Austria">Austria</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Canada">Canada</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                        <option value="India">India</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Netherlands">Netherlands</option>
+                        <option value="New Zealand">New Zealand</option>
+                        <option value="Poland">Poland</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="United States">United States</option>
+                    </select>
+                    <br>
+                    <br>
+                    <div id="buttonDiv"><button type="button" id="filterButton">Apply more filters</button>
+                        <button id="submitButton">Submit</button>
+                    </div>
+                    <br>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- result section -->
+    <div id="foorth" href="#mydata"></div>
+
+    <!-- scripts -->
+    <script>
+        // loading page script
+        var load = document.getElementById("loading")
+        function loadfunc() {
+            load.style.display = 'none';
+        }
+    </script>
+    <!-- importing GSAP ScrollTrigger for smooth scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <!-- importing axios for requesting data from API -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- importing js files -->
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
