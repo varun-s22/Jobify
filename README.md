@@ -12,3 +12,11 @@ You don't need to download these packages, including the script in `index.html` 
 
 You may need to get `API KEY` and `API ID` from the [Adzuna Api](https://developer.adzuna.com/), by creating an account with them.
 Once you recieve the key and id, make a `config.js` file inside the `src` folder, and keep the key/id in that file.
+
+This is how, your `config.js` should look like
+```
+const DATA = {
+    "APIKEY": "{YOUR API KEY (in double quotes)}",
+    "APIID": "{YOUR API ID (in double quotes)}"
+}
+```
